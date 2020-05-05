@@ -30,7 +30,7 @@ with(dataExtra, plot(Date_Time, Voltage, type = "l", xlab = "deadtime", ylab = "
 with(dataExtra, plot(Date_Time, Sub_metering_1, type = "l", xlab = "", ylab = "Energy sub metering"))
 with(dataExtra, lines(Date_Time, Sub_metering_2, type = "l", col = "red"))
 with(dataExtra, lines(Date_Time, Sub_metering_3, type = "l", col = "blue"))
-legend("topright", col = c("black", "red", "blue"), lwd = 2, legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+legend("topright", col = c("black", "red", "blue"), bty = "n", lwd = 2, legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 with(dataExtra, plot(Date_Time, Global_reactive_power, type = "l", xlab = "deadtime", ylab = "Global_reactive_power"))
 # Close device
 dev.off()
